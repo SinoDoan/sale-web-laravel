@@ -15,3 +15,5 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/home','App\Http\Controllers\HomeController@index');
+
+Route::get('/admin','App\Http\Controllers\AdminController@index');

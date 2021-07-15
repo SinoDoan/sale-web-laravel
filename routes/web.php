@@ -17,3 +17,6 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/home','App\Http\Controllers\HomeController@index');
 
 Route::get('/admin','App\Http\Controllers\AdminController@index');
+Route::get('/dashboard','App\Http\Controllers\AdminController@dashboard');
+Route::post('/login','App\Http\Controllers\AdminController@login');
+Route::get('/logout','App\Http\Controllers\AdminController@logout');
